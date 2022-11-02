@@ -1,0 +1,46 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-image: url("talk.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    color:rgb(51, 12, 12);
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.main{
+    background-color: white;
+    border-radius: 15px;
+    height: 540px;
+    padding: 30px;
+}
+#logo{
+    margin:100px 50px 100px 120px;
+    float:left;
+
+}
+#inputuser{
+    border-style: none;
+    width: 150px;
+    border-radius: 10px;
+    background-color: brown;
+    color:rgb(59, 6, 6)
+
+}
+#userButton{
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgba(141, 8, 8, 0.747);
+    color:rgb(43, 5, 5);
+}
+#button{
+    padding-left: 500px;
+    padding-top: 400px;
+}
+#divImg{
+    width: 700px;
+    height:600px;
+    border-radius: 15px;
+    float: left;
+    background-color: brown;
+}
