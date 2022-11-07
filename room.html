@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> Sendo trabalhado</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="room.css">
+    </head>
+    <body>
+        <div id="logoutDiv">
+            <button id="logout" onclick="logout()">Logout</button>
+        </div>
+        <center>
+            <h1>Camp Fire</h1>
+            <div id="addSalasDiv">
+                Adicionar Sala:
+                <input type="text" id="adicionarSalasInput">
+            </div>
+            <br>
+            <button id="adicionarButton" onclick="adicionar()"> Adicionar </button>
+            <h2> Salas Bombando</h2>
+            <div id="output"></div>
+        </center>
+    </body>
 </html>
+<!--Um botão logout, com função onclick.
+Uma tag HTML para conter o nome do usuário que fez login. Forneça uma id a esse elemento para atualizar seu valor sempre que necessário.
+Uma input box (caixa de entrada) para obter o nome da sala. Forneça uma id a essa input box para utilizá-la em JS para obter o nome da sala.
+Um botão “addRoom”, com uma função onclick. Essa função será utilizada para adicionar o nome da sala no localStorage (armazenamento local) e ao banco de dados firebase.
+Uma tag HTML para conter todos os nomes das salas que vindas do firebase. Forneça uma id a esse elemento HTML para atualizar seu valor sempre que necessário.
+Forneça algumas classes bootstrap para tornar todos os elementos precedentes atraentes, você também pode fornecer estilos adicionais à kwitterRoom.css.-->

@@ -1,0 +1,36 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: brown;
+    color: rgb(48, 10, 10);
+}
+#output{
+    background-color: rgb(129, 49, 49);
+    border-radius: 15px;
+    height: 100px;
+}
+#logout{
+    border-radius: 15px;
+    background-color: rgb(51, 22, 22);
+    color: rgb(204, 72, 72);
+    border-style: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+h1{
+    font-size: 100px;
+}
+#adicionarSalasInput{
+    background-color: rgb(94, 26, 26);
+    border-style: none;
+    color: brown;
+    border-radius: 15px;
+}
+#adicionarButton{
+    border-radius: 15px;
+    background-color: rgb(51, 22, 22);
+    color: rgb(204, 72, 72);
+    border-style: none;
+   
+    font-size: 20px;
+}
