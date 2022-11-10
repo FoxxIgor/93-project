@@ -8,7 +8,7 @@ const firebaseConfig = {
     appId: "1:453418213369:web:1b82438e6ceb318a2e6728"
   };
 var userName = localStorage.getItem("name");
-document.getElementById("boasVindas").innerHTML="Bem Vindo "+userName+"!!"
+document.getElementById("boasVindas").innerHTML="Bem Vindo "+ userName +"!!"
 firebase.initializeApp(firebaseConfig); 
 
 
