@@ -5,19 +5,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
         <title> Conversa </title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
         <link rel="stylesheet" href="conversa.css">
     </head>
     <body>
-        <div id="output"></div>
-        <h4> Enviar: </h4>
-        <span>
-            <input type="text" id="mandarMSG" placeholder="Envie sua mensagem!">
-        </span>
-        <span>
-            <button id="enviar" onclick="enviar()"> Enviar </button>
-        </span>
+        <div id="main">
+            <button id="voltar" onclick="voltar()"> Voltar</button>
+            <h1> Mensagems</h1>
+            <div id="output"></div>
+            <h2> Enviar: </h2>
+            <span>
+                <input type="text" id="mandarMSG" placeholder="Envie sua mensagem!">
+            </span>
+            <span>
+                <button id="enviar" onclick="enviar()"> Enviar </button>
+            </span>
+            
+            <script src="conversa.js"></script>
+        </div>
         
-        <script src="conversa.js"></script>
         
     </body>
 </html>

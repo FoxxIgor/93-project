@@ -8,6 +8,7 @@ const firebaseConfig = {
     appId: "1:453418213369:web:1b82438e6ceb318a2e6728"
   };
 firebase.initializeApp(firebaseConfig); 
+
 user = localStorage.getItem("name");
 sala = localStorage.getItem("sala")
 function enviar(){
@@ -23,7 +24,7 @@ function enviar(){
 function getData(){
     firebase.database().ref("/"+sala).on('value', function(snapshot) 
     { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) {
-        childKey = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "purpose") {
+        childKey = childSnapshot.key; childData = childSnapshot.val(); if(childKey != "sala") {
             firebaseMessageId = childKey; 
             messageData = childData;
             console.log(firebaseMessageId);
@@ -33,9 +34,22 @@ function getData(){
             like = messageData['likes'];
             nomeComIcon ="<h4>"+nome+"<img id='icon' src='icon.png'></h4>";
             message ="<h4 class='message_h4'>"+mensagem+"</h4>"
-            likeButton ="<button class='btn btn-warn' id="+firebaseMessageId+" value="+like+" onclick='like(this.id)'></button>";
+            likeButton ="<button class='btn btn-warn' id="+firebaseMessageId+" value="+like+" onclick='like(this.id)'>";
             spanWithTag = "<span class='glyphicon glyphicon-thumbs-up'>Like: "+ like +"</span></button><hr>";
             row = nomeComIcon+message+likeButton+spanWithTag;
+            document.getElementById("output").innerHTML=row;
         }});
   });
+}
+getData();
+function like(msgId){
+    buttonId=msgId;
+    like = document.getElementById(buttonId).value;
+    updateLike = Number(like)+1;
+    firebase.database().ref(sala).child(msgId).update({
+        like:updateLike,
+    });
+} 
+function voltar(){
+    window.location="room.html";
 }

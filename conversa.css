@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+}
+#enviar{
+    color: brown;
+    border-radius: 10px;
+    border-color: brown;
+}
+#voltar{
+    margin-top: 10px;
+    color: brown;
+    border-radius: 10px;
+    border-color: brown;
+}
+#output{
+    background-color: brown;
+    color: white;
+    border-radius: 16px;
+    width: 500px;
+    text-align: left;
+    margin: 100px;
+    margin-left: 400px;
+    padding-left: 10px;
+    border: 5px solid rgb(87, 37, 37);
+}
+#mandarMSG{
+    background-color:brown;
+    color: white;
+    border-radius: 30px;
+    border-style: none;
+}
+#main{
+    border-radius: 30px;
+    border: 5px solid brown;
+    padding-bottom: 10px;
+}
+#icon{
+    
+    width:20px;
+    height: 20px;
+}
