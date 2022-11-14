@@ -37,7 +37,7 @@ function getData(){
             likeButton ="<button class='btn btn-warn' id="+firebaseMessageId+" value="+like+" onclick='like(this.id)'>";
             spanWithTag = "<span class='glyphicon glyphicon-thumbs-up'>Like: "+ like +"</span></button><hr>";
             row = nomeComIcon+message+likeButton+spanWithTag;
-            document.getElementById("output").innerHTML=row;
+            document.getElementById("output").innerHTML+=row;
         }});
   });
 }
